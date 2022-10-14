@@ -1,0 +1,162 @@
+{% load static %}
+
+<!-- NAVBAR
+    ================================================== -->
+    <div class="bg-dark">
+        <div class="container d-none d-xl-block">
+            <div class="d-flex align-items-center border-bottom border-white-20 pt-2 pb-4">
+                <ul class="nav mx-n3">
+                    <li class="nav-item px-3">
+                        <span class="font-size-sm text-white">(+91) 12345 67890</span>
+                    </li>
+                    <li class="nav-item px-3">
+                        <span class="font-size-sm text-white">support@skola.com</span>
+                    </li>
+                </ul>
+    
+                <ul class="nav ms-auto me-n3 font-size-sm">
+                    <li class="nav-item px-3">
+                        <a href="#" class="nav-link p-0 text-white">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a href="#" class="nav-link p-0 text-white">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a href="#" class="nav-link p-0 text-white">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a href="#" class="nav-link p-0 text-white">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <header class="navbar navbar-expand-xl navbar-dark bg-dark" >
+        <div class="container">
+
+            <!-- Brand -->
+            <a class="navbar-brand" href="">
+                <img src="{% static 'assets/img/brand.svg' %}" class="navbar-brand-img" alt="...">
+            </a>
+
+            <!-- Vertical Menu -->
+            <ul class="navbar-nav navbar-vertical ms-xl-4 d-none d-xl-flex">
+                <li class="nav-item dropdown">
+                    <a class="nav-link pb-4 mb-n4 px-0 pt-0" id="navbarVerticalMenu" data-bs-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
+                        <div class="bg-white-10 rounded-xl py-3 px-5 d-flex align-items-center">
+                            <span class="text-white fw-medium me-1">Courses</span>
+                            <div class="ms-3 text-white">
+                                <!-- Icon -->
+                                <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.84016 0.540385L9.5126 0.210545C9.40951 0.107536 9.27235 0.0507876 9.12577 0.0507876C8.97926 0.0507876 8.84194 0.107536 8.73885 0.210545L5.00224 3.94732L1.26131 0.206399C1.15838 0.10339 1.02107 0.0467224 0.87456 0.0467224C0.728055 0.0467224 0.590655 0.10339 0.487646 0.206399L0.160001 0.534206C-0.0533338 0.747379 -0.0533338 1.09462 0.160001 1.30779L4.61402 5.77783C4.71695 5.88075 4.8541 5.95327 5.00191 5.95327H5.00362C5.1502 5.95327 5.28736 5.88067 5.39029 5.77783L9.84016 1.3199C9.94325 1.21698 9.99984 1.07567 10 0.929169C10 0.782582 9.94325 0.643231 9.84016 0.540385Z" fill="currentColor"/>
+                                </svg>
+
+                            </div>
+                        </div>
+                    </a>
+
+                    <ul class="dropdown-menu dropdown-menu-md bg-white rounded py-4 mt-4" aria-labelledby="navbarVerticalMenu">
+                        <li class="dropdown-item dropright">
+                            <a class="dropdown-link dropdown-toggle" data-bs-toggle="dropdown" href="#">
+                                <div class="me-4 d-flex text-primary icon-xs">
+                                    <!-- Icon -->
+                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.5247 5.64759C10.3104 5.21736 9.6919 5.21322 9.47557 5.64759L5.37401 13.8898C5.28096 14.0767 5.29443 14.299 5.4094 14.4734L7.65635 17.8813V20.0493C7.65635 20.3729 7.91869 20.6352 8.24229 20.6352H11.7579C12.0815 20.6352 12.3439 20.3729 12.3439 20.0493V17.8813L14.5908 14.4734C14.7058 14.299 14.7192 14.0767 14.6262 13.8898L10.5247 5.64759ZM11.172 19.4633H8.82822V18.2915H11.172V19.4633ZM11.4424 17.1196H8.55779L6.57342 14.1099L9.41416 8.40131V14.1508C9.41416 14.4744 9.67651 14.7368 10.0001 14.7368C10.3237 14.7368 10.586 14.4744 10.586 14.1508V8.40131L13.4268 14.1099L11.4424 17.1196Z" fill="currentColor" fill-opacity="0.6"/>
+                                        <path d="M18.2422 0.635132C17.4783 0.635132 16.827 1.12501 16.5852 1.80701H11.7578V1.22107C11.7578 0.897476 11.4955 0.635132 11.1719 0.635132H8.82812C8.50453 0.635132 8.24219 0.897476 8.24219 1.22107V1.80701H3.41484C3.17297 1.12501 2.52168 0.635132 1.75781 0.635132C0.788555 0.635132 0 1.42369 0 2.39294C0 3.3622 0.788555 4.15076 1.75781 4.15076C2.52168 4.15076 3.17297 3.66048 3.41484 2.97849H5.60676C2.87645 4.5465 1.17188 7.44322 1.17188 10.5961C1.17188 10.9197 1.43422 11.182 1.75781 11.182C2.08141 11.182 2.34375 10.9197 2.34375 10.5961C2.34375 7.06076 4.8359 3.98591 8.24219 3.18271V3.56482C8.24219 3.88841 8.50453 4.15076 8.82812 4.15076H11.1719C11.4955 4.15076 11.7578 3.88841 11.7578 3.56482V3.18267C15.1641 3.98591 17.6562 7.06076 17.6562 10.5961C17.6562 10.9197 17.9186 11.182 18.2422 11.182C18.5658 11.182 18.8281 10.9197 18.8281 10.5961C18.8281 7.44724 17.127 4.54884 14.3932 2.97888H16.5852C16.827 3.66087 17.4783 4.15076 18.2422 4.15076C19.2114 4.15076 20 3.3622 20 2.39294C20 1.42369 19.2114 0.635132 18.2422 0.635132ZM1.75781 2.97888C1.43473 2.97888 1.17188 2.71603 1.17188 2.39294C1.17188 2.06986 1.43473 1.80701 1.75781 1.80701C2.0809 1.80701 2.34375 2.06986 2.34375 2.39294C2.34375 2.71603 2.0809 2.97888 1.75781 2.97888ZM10.5859 2.97888H9.41406V1.80701H10.5859V2.97888ZM18.2422 2.97888C17.9191 2.97888 17.6562 2.71603 17.6562 2.39294C17.6562 2.06986 17.9191 1.80701 18.2422 1.80701C18.5653 1.80701 18.8281 2.06986 18.8281 2.39294C18.8281 2.71603 18.5653 2.97888 18.2422 2.97888Z" fill="currentColor"/>
+                                    </svg>
+
+                                </div>
+                                Web Development
+                            </a>
+
+                            <div class="dropdown-menu ps-3 top-0 pe-0 py-0 shadow-none bg-transparent">
+                                <div class="dropdown-menu-md bg-white rounded dropdown-menu-inner">
+                                    <a class="dropdown-item" href="course/html">
+                                        HTML5
+                                    </a>
+                                    <a class="dropdown-item" href="course">
+                                        CSS3
+                                    </a>
+                                    <a class="dropdown-item" href="course">
+                                        Bootstrap
+                                    </a>
+                                    <a class="dropdown-item" href="course">
+                                        JavaScript
+                                    </a>
+                                    <a class="dropdown-item" href="course">
+                                        ReactJS
+                                    </a>
+                                    <a class="dropdown-item" href="course">
+                                        NodeJS
+                                    </a>
+                                    <a class="dropdown-item" href="course">
+                                        Express
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="dropdown-item dropright">
+                            <a class="dropdown-link dropdown-toggle" data-bs-toggle="dropdown" href="#">
+                                <div class="me-4 d-flex text-primary icon-xs">
+                                    <!-- Icon -->
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M18.2422 0.0397949H1.75781C0.788555 0.0397949 0 0.82835 0 1.79761V18.2039C0 19.1731 0.788555 19.9617 1.75781 19.9617H18.2422C19.2114 19.9617 20 19.1731 20 18.2039V1.79761C20 0.82835 19.2114 0.0397949 18.2422 0.0397949ZM1.75781 1.21167H18.2422C18.5653 1.21167 18.8281 1.47452 18.8281 1.79761V4.72729H1.17188V1.79761C1.17188 1.47452 1.43473 1.21167 1.75781 1.21167ZM18.2422 18.7898H1.75781C1.43473 18.7898 1.17188 18.5269 1.17188 18.2039V5.89917H18.8281V18.2039C18.8281 18.5269 18.5653 18.7898 18.2422 18.7898Z" fill="currentColor"/>
+                                        <path d="M11.9887 7.70365C11.6912 7.57619 11.3468 7.71396 11.2193 8.01138L7.70367 16.2145C7.57616 16.5119 7.71398 16.8564 8.0114 16.9839C8.30894 17.1114 8.65335 16.9735 8.78078 16.6761L12.2964 8.47302C12.4239 8.17556 12.2861 7.83111 11.9887 7.70365Z" fill="currentColor"/>
+                                        <path d="M6.94201 9.63397C6.73982 9.38128 6.37103 9.34034 6.11845 9.54249L3.18876 11.8862C2.89583 12.1205 2.89564 12.5669 3.18876 12.8013L6.11845 15.1451C6.37115 15.3473 6.73994 15.3062 6.94201 15.0536C7.14416 14.8009 7.10322 14.4321 6.85048 14.23L4.49275 12.3438L6.85048 10.4576C7.10322 10.2554 7.14416 9.88671 6.94201 9.63397Z" fill="currentColor"/>
+                                        <path d="M16.8114 11.8863L13.8817 9.54251C13.629 9.34032 13.2602 9.38129 13.0581 9.63399C12.856 9.88668 12.8969 10.2554 13.1496 10.4575L15.5074 12.3438L13.1496 14.23C12.8969 14.4321 12.856 14.8009 13.0581 15.0536C13.2605 15.3065 13.6293 15.347 13.8817 15.145L16.8114 12.8013C17.1043 12.567 17.1045 12.1207 16.8114 11.8863Z" fill="currentColor"/>
+                                        <path d="M2.96875 3.55469C3.29235 3.55469 3.55469 3.29235 3.55469 2.96875C3.55469 2.64515 3.29235 2.38281 2.96875 2.38281C2.64515 2.38281 2.38281 2.64515 2.38281 2.96875C2.38281 3.29235 2.64515 3.55469 2.96875 3.55469Z" fill="currentColor"/>
+                                        <path d="M5.3125 3.55469C5.6361 3.55469 5.89844 3.29235 5.89844 2.96875C5.89844 2.64515 5.6361 2.38281 5.3125 2.38281C4.9889 2.38281 4.72656 2.64515 4.72656 2.96875C4.72656 3.29235 4.9889 3.55469 5.3125 3.55469Z" fill="currentColor"/>
+                                        <path d="M7.65625 3.55469C7.97985 3.55469 8.24219 3.29235 8.24219 2.96875C8.24219 2.64515 7.97985 2.38281 7.65625 2.38281C7.33265 2.38281 7.07031 2.64515 7.07031 2.96875C7.07031 3.29235 7.33265 3.55469 7.65625 3.55469Z" fill="currentColor"/>
+                                        <path d="M13.5156 3.55469H17.0312C17.3548 3.55469 17.6172 3.29234 17.6172 2.96875C17.6172 2.64516 17.3548 2.38281 17.0312 2.38281H13.5156C13.192 2.38281 12.9297 2.64516 12.9297 2.96875C12.9297 3.29234 13.192 3.55469 13.5156 3.55469Z" fill="currentColor"/>
+                                    </svg>
+
+                                </div>
+                                Android Development
+                            </a>
+
+                            <div class="dropdown-menu ps-3 top-0 pe-0 py-0 shadow-none bg-transparent">
+                                <div class="dropdown-menu-md bg-white rounded dropdown-menu-inner">
+                                    <a class="dropdown-item" href="course">
+                                        Java
+                                    </a>
+                                    <a class="dropdown-item" href="course">
+                                        Kotlin
+                                    </a>
+                                    <a class="dropdown-item" href="course">
+                                        Flutter
+                                    </a>
+                                    <a class="dropdown-item" href="course">
+                                        Dart
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <!-- Collapse -->
+            <div class="collapse navbar-collapse z-index-lg" id="navbarCollapse">
+
+                <!-- Toggler -->
+                <button class="navbar-toggler outline-0 text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- Icon -->
+                    <svg width="16" height="17" viewBox="0 0 16 17" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.142135 2.00015L1.55635 0.585938L15.6985 14.7281L14.2843 16.1423L0.142135 2.00015Z" fill="currentColor"></path>
+                        <path d="M14.1421 1.0001L15.5563 2.41431L1.41421 16.5564L0 15.1422L14.1421 1.0001Z" fill="currentColor"></path>
+                    </svg>
+
+                </button>
+                    <!-- Navigation -->
+                </div>
+        </header>
